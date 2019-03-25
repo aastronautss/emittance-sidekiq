@@ -1,0 +1,55 @@
+AllCops:
+  Exclude:
+    - 'spec/**/*'
+    - 'bin/**/*'
+    - 'node_modules/**/*'
+    - 'db/**/*'
+    - 'config/**/*'
+    - '**/*.haml'
+    - '**/*.js.erb'
+
+# Metrics
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/MethodLength:
+  Max: 15
+
+# Layout
+
+Layout/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
+Layout/EmptyLinesAroundArguments:
+  Enabled: false
+
+Layout/IndentHash:
+  EnforcedStyle: consistent
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Layout/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
+# Style
+
+Style/ClassAndModuleChildren:
+  Exclude:
+    - 'app/controllers/**/*'
+
+Style/DoubleNegation:
+  Enabled: false
+
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+
+Style/Lambda:
+  EnforcedStyle: literal
+
+Style/LambdaCall:
+  EnforcedStyle: braces
+
+Style/SymbolArray:
+  EnforcedStyle: brackets
