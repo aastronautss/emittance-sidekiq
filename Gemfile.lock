@@ -3,14 +3,14 @@ PATH
   specs:
     emittance-sidekiq (0.1.0)
       emittance
-      sidekiq (~> 5)
+      sidekiq (>= 5, < 7)
 
 GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.0)
     coderay (1.1.2)
-    connection_pool (2.2.2)
+    connection_pool (2.2.5)
     diff-lcs (1.3)
     docile (1.3.0)
     emittance (1.1.0)
@@ -26,11 +26,9 @@ GEM
       method_source (~> 0.9.0)
     psych (3.1.0)
     rack (2.2.3)
-    rack-protection (2.0.5)
-      rack
     rainbow (3.0.0)
     rake (13.0.3)
-    redis (4.1.0)
+    redis (4.5.1)
     rspec (3.8.0)
       rspec-core (~> 3.8.0)
       rspec-expectations (~> 3.8.0)
@@ -54,11 +52,10 @@ GEM
       ruby-progressbar (~> 1.7)
       unicode-display_width (~> 1.4.0)
     ruby-progressbar (1.10.0)
-    sidekiq (5.2.5)
-      connection_pool (~> 2.2, >= 2.2.2)
-      rack (>= 1.5.0)
-      rack-protection (>= 1.5.0)
-      redis (>= 3.3.5, < 5)
+    sidekiq (6.4.0)
+      connection_pool (>= 2.2.2)
+      rack (~> 2.0)
+      redis (>= 4.2.0)
     simplecov (0.16.1)
       docile (~> 1.1)
       json (>= 1.8, < 3)
